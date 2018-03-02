@@ -21,6 +21,9 @@
 .Itsme{
   box-shadow: 1px 5px 10px 7px #CFD6DE;
 }
+.Used{
+  opacity: .2;
+}
 .Avatar{
   border-radius: 50%;
   width: 120px;
