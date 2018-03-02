@@ -20,4 +20,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-src/fire-env.js
+/src/fire-env.js
