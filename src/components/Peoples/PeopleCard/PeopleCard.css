@@ -1,0 +1,33 @@
+.PeopleCard{
+  width: 200px;
+  padding: 20px;
+  background-color: #FFF;
+  box-shadow: 1px 5px 12px 2px #CFD6DE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  
+}
+.PeopleCard:hover{
+  box-shadow: 1px 5px 20px 2px #CFD6DE;
+  outline: none;
+  cursor: pointer;
+}
+.PeopleCard:active{
+  box-shadow: 1px 5px 10px 2px #CFD6DE;
+  outline: none;
+}
+.Itsme{
+  box-shadow: 1px 5px 10px 7px #CFD6DE;
+}
+.Avatar{
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+.Title{
+  margin-top: 20px;
+  color: rgba(84, 113, 144, 0.8);
+  font-size: 1.2rem;
+}

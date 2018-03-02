@@ -1,0 +1,18 @@
+.Peoples{
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@supports(display: grid){
+  .Peoples{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+}
