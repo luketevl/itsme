@@ -8,6 +8,13 @@ export default class Peoples extends Component{
     error: false
   }
 
+  checkAllUseds(users = []){
+    return users.every(user => user.used === 1)
+  }
+
+  setAllUsed(users, used= 0){
+    return users.map(user => user.used = used);
+  }
   createData(data){
     let users =[];
     for(let key in data){
@@ -25,9 +32,12 @@ export default class Peoples extends Component{
     axios.get( 'users.json' )
         .then( response => {
           console.log(response);
-          const users = this.createData(response.data);
+          let users = this.createData(response.data);
+          if(this.checkAllUseds(users)){
+            users = this.setAllUsed(users, 0);
+          }
           console.log(users);
-            this.setState( { peoples: users } );
+          this.setState( { peoples: users } );
         } )
         .catch( error => {
           console.log(error);
